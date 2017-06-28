@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	</style>
+</head>
+<body>
+<svg width="400" height="400" >
+  <circle cx="200" cy="200" r="50" style="fill:#ff6600">
+     <animate attributeName="r"
+     attributeType="XML"
+     from="50"
+     begin="0s"
+     dur="2s"
+     repeatCount="indefinite"
+     values="50;80;50"
+     />	
+     <animate attributeName="fill-opacity" attrbuteType="CSS" values="1;0.6;1" begin="0s" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!--from和to只能定义开始和终结两个时间点，另外还有一个属性by，是可以替代to的，to表示的是一个绝对值，by表示的是一个offset，比如from为50，to为80，表示从50到80，by为80的话，表示offset为80，那么最终的结果就是130,如果我们的demo使用by，那么就是by 30.除了by，还有一个属性values，他可以接受一组数值 -->
+</svg>
+</body>
+</html>
